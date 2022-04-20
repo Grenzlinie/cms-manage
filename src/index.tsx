@@ -1,9 +1,9 @@
 import ReactDom from 'react-dom';
-import App from './App';
-import 'antd/dist/antd.css';
+import MyRouter from 'router';
+import "base.less";
 
 ReactDom.render(
-    <App />,
+    <MyRouter />,
     document.getElementById("root")
 )
 
