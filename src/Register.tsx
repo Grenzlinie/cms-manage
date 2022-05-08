@@ -49,7 +49,7 @@ export default function Register() {
 
   return (
     <div className='login_box' >
-      <img src={logo} className='logo' alt="" />
+      <img src={logo} className='logo' alt="" height='80px' />
       <Form
         size='large'
         name="basic"

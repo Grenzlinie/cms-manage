@@ -50,7 +50,7 @@ export default function Login() {
 
   return (
     <div className='login_box' >
-      <img src={logo} className='logo' alt="" />
+      <img src={logo} className='logo' alt="" height='80px' />
       <Form
         name="basic"
         labelCol={{ span: 8 }}

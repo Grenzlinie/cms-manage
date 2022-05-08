@@ -2,6 +2,13 @@
 
 本项目是一个基于TypeScript+React+Node.js开发的企业后台内容管理系统。主要实现了管理人员的注册登录及信息更改，文章内容的增删查改。
 
+项目启动：
+
+```javascript
+//前端后端均为
+npm start
+```
+
 项目线上地址：
 
 项目内容并不复杂，适合我这样的萌新入门Typescript,React框架与AntD组件库的使用。
