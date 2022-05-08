@@ -1,46 +1,17 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+#项目基本情况介绍
+    本项目是一个基于TypeScript+React+Node.js开发的企业后台内容管理系统。主要实现了管理人员的注册登录及信息更改，文章内容的增删查改。
+    项目线上地址：
+    项目内容并不复杂，适合新手入门Typescript,React框架与AntD组件库的使用。
+#技术选型
+    ##前端部分:
+        1.使用TypeScript+HTML+Less+React+AntD进行前端页面显示
+        2.使用react-router作为页面路由管理和懒加载的实现
+        3.使用react-redux进行状态管理
+        4.使用axios封装ajax请求与后端进行http传输
+        5.使用DocWay进行前后端Api接口参数的协同管理
+    ##后端部分:
+        1.使用Node.js搭建后端服务器
+        2.使用koa2进行后端路由管理，静态图片资源路径和跨域问题等处理
+        3.使用jwt进行鉴权处理
+        4.使用Multer处理图片传输，重命名和大小优化
+        5.使用MySQL进行文章内容和管理人员两个数据库的管理
