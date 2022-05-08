@@ -1,15 +1,47 @@
-import React, { useState } from 'react'
-import { Form, Input, Button } from 'antd';
-import {Link} from 'react-router-dom';
+import React from 'react'
+import { Form, Input, Button, message } from 'antd';
+import {Link, useNavigate} from 'react-router-dom';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
+import { LoginApi } from 'request/api';
 import './Login.less'
 
 const logo = require("assets/images/logo.png")
+interface IValues {
+  username: string;
+  password: string;
+}
 
 export default function Login() {
+  const navigate = useNavigate();
 
-  const onFinish = (values: any) => {
-    console.log('Success:', values);
+  //点击登录
+  const onFinish = (values: IValues) => {
+
+    interface IRes{
+      errCode?: number;
+      message?: string;
+      data?: any;
+    }
+
+    LoginApi(values).then((res: IRes) => {
+      if (res.errCode === 0) {
+        //提示
+        message.success(res.message, 1);
+        //保持用户信息和token
+        // localstorage || react-redux
+        localStorage.setItem('username', res.data.username);
+        localStorage.setItem('cms-token', res.data['cms-token']);
+        localStorage.setItem('avatar', res.data.avatar); //环境变量
+        localStorage.setItem('player', res.data.player);
+        localStorage.setItem('editable', res.data.editable);
+        //跳转根路径
+        setTimeout(()=>{
+          navigate("/")
+        }, 1000)
+      } else {
+        message.error(res.message);
+      }
+    });
   };
 
   const onFinishFailed = (errorInfo: any) => {
@@ -50,7 +82,7 @@ export default function Login() {
 
         <Form.Item>
           <Button type="primary" htmlType="submit" block size='large'>
-            Submit
+            登录
           </Button>
         </Form.Item>
       </Form>

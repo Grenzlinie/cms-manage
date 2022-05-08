@@ -3,10 +3,11 @@ import { lazy, Suspense } from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Loading from "components/Loading"
 
+
 //定义数组每一项的接口
 interface IRoute {
     path: string;
-    component: React.FC;
+    component: any;
     children?: IRoute[];
 }
 
@@ -14,8 +15,10 @@ interface IRoute {
 const router_arr: IRoute[] = [
     {path: "/", component: App, children: [
         {path: "list", component: lazy(()=>import("pages/List"))},
-        {path: "edit", component: lazy(()=>import("pages/Edit"))},
+        {path: "edit/", component: lazy(()=>import("pages/Edit"))},
+        {path: "edit/:id", component: lazy(()=>import("pages/Edit"))},
         {path: "means", component: lazy(()=>import("pages/Means"))},
+        {path: "namelist", component: lazy(()=>import("pages/NameList"))},
     ]},
     {path: "/login", component: lazy(()=>import("Login"))},
     {path: "/register", component: lazy(()=>import("Register"))},
