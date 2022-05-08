@@ -9,7 +9,7 @@
 npm start
 ```
 
-项目线上地址：
+项目线上地址：http://106.15.43.155/cms-manage/
 
 项目内容并不复杂，适合我这样的萌新入门Typescript,React框架与AntD组件库的使用。
 
