@@ -41,12 +41,12 @@ npm start
 
 ## 效果图
 登录注册<br>
-![登录注册](/login.png)
+![登录注册](/login.png)<br>
 文章列表<br>
-![文章列表](/article-list.png)
+![文章列表](/article-list.png)<br>
 文章编辑<br>
-![文章编辑](/edit.png)
+![文章编辑](/edit.png)<br>
 用户信息修改<br>
-![信息修改](/user-information.png)
+![信息修改](/user-information.png)<br>
 管理员<br>
-![管理员](/manager.png)
+![管理员](/manager.png)<br>
