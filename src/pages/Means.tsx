@@ -110,7 +110,7 @@ function Means(props: IProps) {
         listType="picture-card"
         className="avatar-uploader"
         showUploadList={false}
-        action="http://localhost:9000/manage/upload"
+        action={process.env.SERVER_PORT + "/manage/upload"}
         headers={{ 'cms-token': localStorage.getItem('cms-token') as string}}
         beforeUpload={beforeUpload}
         onChange={handleChange}

@@ -25,7 +25,7 @@ const router_arr: IRoute[] = [
 ]
 
 const MyRouter = () => (
-    <BrowserRouter>
+    <BrowserRouter basename='/cms-manage/'>
     <Suspense fallback={<Loading />} >
         <Routes>
             {

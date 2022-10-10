@@ -38,3 +38,15 @@ npm start
 4.使用Multer处理图片传输，重命名和大小优化
 
 5.使用MySQL进行文章内容和管理人员两个数据库的管理
+
+## 效果图
+登录注册
+![登录注册](/login.png)
+文章列表
+![文章列表](/article-list.png)
+文章编辑
+![文章编辑](/edit.png)
+用户信息修改
+![信息修改](/user-information.png)
+管理员
+![管理员](/manager.png)
